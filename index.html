@@ -62,20 +62,174 @@ footer .path{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:1
 <h1>울릉크루즈 제목 분석 보고서</h1>
 <p class="muted small">예스준 · 제목 잠금 · 공개 숫자만 · 추정 조회 없음</p>
 <div class="props">
-  <div class="prop-k">상태</div><div>제목 잠금</div>
-  <div class="prop-k">날짜</div><div>2026-08-21 KST</div>
-  <div class="prop-k">채널</div><div>예스준</div>
-  <div class="prop-k">작성</div><div>예스준 HQ</div>
-  <div class="prop-k">범위</div><div>한국 출발 크루즈·페리 공개 숫자만</div>
-  <div class="prop-k">Sources</div><div>content.md · reference.md · ulleung-cruise/videos.md</div>
+<div class="prop-k">상태</div><div>제목 잠금</div>
+<div class="prop-k">날짜</div><div>2026-08-21 KST</div>
+<div class="prop-k">채널</div><div>예스준</div>
+<div class="prop-k">작성</div><div>예스준 HQ</div>
+<div class="prop-k">범위</div><div>한국 출발 크루즈·페리 공개 숫자만</div>
+<div class="prop-k">Sources</div><div>content.md · reference.md · ulleung-cruise/videos.md</div>
 </div>
-<h2 id="method">방법 / 소스</h2>
+<h2 id="방법">방법 / 소스</h2>
 <p>이 페이지의 숫자·날짜·제목은 아래 소스에 적힌 것만 옮겼다. 없는 칸은 비운다. 추정 조회는 없다.</p>
-<h2 id="rec">추천 제목 3</h2>
-<p>content.md 잠금 1 + 예비 2.</p>
+<table><thead><tr><th>소스</th><th>무엇을 봄</th><th>조회일</th><th>파일</th></tr></thead><tbody>
+<tr><td>YouTube watch<br><span class="muted">ytInitialPlayerResponse</span> + 채널 RSS + yt-dlp</td><td>본 채널·경쟁 공개 조회. 이번 주 범위: 한국 출발 크루즈·페리만</td><td>2026-08-21</td><td>reference.md</td></tr>
+<tr><td>YouTube innertube<br><span class="muted">POST /youtubei/v1/next · hl=ko · gl=KR</span></td><td>울릉 채택 표 조회·좋아요·댓글. 목록 근사치·창작 없음</td><td>2026-08-21 07:21–07:23 KST</td><td>videos.md</td></tr>
+<tr><td>YouTube watch · innertube</td><td>배타고 BetaGo <code>BSzcCiP8mk0</code> 조회·좋아요·댓글</td><td>2026-08-21</td><td>reference.md · videos.md</td></tr>
+<tr><td>RYD + Invidious</td><td>JY REPORT <code>vYOi32075Vo</code>. 이번 재수집 표에는 빠져 있어 기존 소스 유지</td><td>2026-08-21</td><td>reference.md</td></tr>
+<tr><td>자막 (우리 편)</td><td>포항 밤 11시 출발, 편도 약 9만, 6인실, 차 싣는 유일한 울릉 배</td><td class="empty">—</td><td>content.md</td></tr>
+</tbody></table>
+<p class="small muted">레퍼런스 4편 자막 칸은 소스에 없음. 댓글 원문은 세 파일에 없어 요약만 옮김. 썸네일은 i.ytimg.com hqdefault (base64 없음).</p>
+<div class="callout warn"><div class="label">크루즈시티 제외 — reference.md · videos.md에 적힌 숫자만</div>
+<p>코스타 9/2 영상 <code>7grS-ID3-io</code>: <strong>371,441회 / 좋아요 87 / 댓글 6</strong> (yt-dlp 2026-08-21). 좋아요% 0.023%.</p>
+<p>「크루즈시티는 레퍼런스에서 제외.」 「크루즈시티 수치는 히트로 쓰지 않음.」 「크루즈시티는 아웃라이어에서 제외.」 이 페이지에서 히트·근거로 쓰지 않는다.</p></div>
+<p>본 채널 공개 숫자 (reference.md, 조회일 2026-08-21): 구독 8.9만 / 583편 / 86,201,154회. 이김: 코스타 세레나 287,648회/7일 (<code>xbw4osuVGvU</code>). 부관훼리 782,473회 (<code>467_VGMtyU4</code>, 2026-05-02). 짐: 독도 편 1,757회 (<code>wdOtTElC5do</code>). 울릉크루즈와 다른 영상.</p>
+<h2 id="이긴제목">예스준이 이긴 제목</h2>
+<p>출처: reference.md 「이긴 제목 공통점 (@예스준, 공개)」. 공식 4칸을 채운 편이 이김. 체크는 제목 문자열에 보이는 칸만. 화면 숫자와 공개 조회를 섞지 않는다.</p>
+<p class="small muted">공통: 가격 숫자 앞쪽, 출발·도착 구간, 배 이름 또는 노선명, 혜택 반전 하나. 힘듬 한탄은 없음.</p>
+<table><thead><tr><th>제목</th><th class="num">조회</th><th>구분</th><th>날짜/상대</th><th>id</th><th class="center">출발</th><th class="center">가격</th><th class="center">배</th><th class="center">반전</th></tr></thead><tbody>
+<tr><td>6만원에 부산 → 일본｜수하물 무제한, 액체류, 흡연 OK 부관훼리 탑승 후기</td><td class="num">782,473</td><td><span class="tag">공개</span></td><td>2026-05-02</td><td><code>467_VGMtyU4</code></td><td class="center">부산</td><td class="center">6만원</td><td class="center">부관훼리</td><td class="center">수하물 무제한</td></tr>
+<tr><td>비행기보다 싼데 거의 크루즈입니다. 3만원으로 제주도 (내 차 싣고 가는 퀸제누비아2)</td><td class="num">57만</td><td><span class="tag">화면</span></td><td>3개월 전</td><td><code>gXFUEWT838o</code></td><td class="center">제주도<span class="muted"><br>도착</span></td><td class="center">3만원</td><td class="center">퀸제누비아2</td><td class="center">내 차 싣고</td></tr>
+<tr><td>한국 최초 삼겹살 무제한 5성급 크루즈? 오사카 → 부산 15만원 탑승 후기</td><td class="num">290,419</td><td><span class="tag">공개</span></td><td>2개월 전</td><td><code>ZqI_nVDYhvk</code></td><td class="center">오사카→부산</td><td class="center">15만원</td><td class="center">5성급 크루즈</td><td class="center">삼겹살 무제한</td></tr>
+<tr><td>“다시는 안 탄다”는 크루즈, 왜 계속 팔릴까? 한국출발 코스타 세레나</td><td class="num">287,648</td><td><span class="tag">공개</span></td><td>2026-08-13<br><span class="muted">/7일</span></td><td><code>xbw4osuVGvU</code></td><td class="center">한국출발</td><td class="center empty">—</td><td class="center">코스타 세레나</td><td class="center">왜 계속 팔릴까</td></tr>
+<tr><td>서울 30만원, 부산 19만원… 대마도 왜 이래?</td><td class="num">60만</td><td><span class="tag">화면</span></td><td>4개월 전</td><td><code>7Ym0GfCSNCw</code></td><td class="center">서울·부산</td><td class="center">30만·19만</td><td class="center">대마도<span class="muted"><br>노선</span></td><td class="center">왜 이래</td></tr>
+<tr><td>부산 출발 4박 5일 크루즈 역대급 가성비 70만원!</td><td class="num">54만</td><td><span class="tag">화면</span></td><td>5개월 전</td><td><code>CJi2M7-bwcE</code></td><td class="center">부산</td><td class="center">70만원</td><td class="center">크루즈</td><td class="center">역대급 가성비</td></tr>
+</tbody></table>
+<p class="small muted">화면 = reference.md에 「화면 57만 / 화면 60만 / 화면 54만」으로만 적힘. 공개 조회 칸 없음. 삼겹살·퀸제누비아·대마도·4박5일의 정확한 게시 일자는 「n개월 전」만 있음.</p>
+<h3>경쟁 채널에서 잘 된 제목 (오늘 본 것만)</h3>
+<p class="small muted">reference.md. 공식에 붙는 것: 가격 앞, 배 이름, 기한(마지막/신규 취항), 혜택 반전(차, 먹여주고, 탈만할까).</p>
+<table><thead><tr><th>채널</th><th>제목</th><th class="num">조회</th><th>날짜</th><th>id</th></tr></thead><tbody>
+<tr><td>걷는 여행</td><td>올해 신규 취항! 제주 편도 3만원, 내차도 실을 수 있는 크루즈형 카페리</td><td class="num">803,202</td><td>2026-08-14</td><td><code>A8kiD74yzr8</code></td></tr>
+<tr><td>박엥겍</td><td>먹여주고 재워주는 팬스타 미라클 크루즈</td><td class="num">656,414</td><td>2025-04-26</td><td><code>AR2ryUb9M9U</code></td></tr>
+<tr><td>밥알</td><td>비행기 대신 17시간.. 오사카행 5성급 크루즈가 19만원, 탈만할까?</td><td class="num">331,942</td><td>2026-06-18</td><td><code>fpIQqP9cD-I</code></td></tr>
+</tbody></table>
+<p class="small muted">교육형 [긴급] 고르는 법(폴리트립스 328,022, 2024-06-04, <code>FhPLU0zmrPI</code>)은 우리 탑승 공식과 다름 — reference.md.</p>
+<h2 id="진제목">독도 편 대조 — 울릉크루즈 아님</h2>
+<div class="callout warn"><div class="label">약한 대조 (독도 편, 울릉크루즈 아님)</div>
+<p><strong>서울→울릉도→독도까지 편도 13시간... 솔직히 너무 힘들었습니다</strong></p>
+<p>1,757회 · <code>wdOtTElC5do</code></p>
+<p>가격 없음, 배 이름 없음, 반전이 힘듬.</p></div>
+<p>content.md: 독도 후기 아님. 배 실험. 독도 바위·독도 편 연결 금지. 「독도 CTR 3.3%는 반대 증거.」 월요일 스튜디오 숫자로만 적혀 있다. 다른 성과 숫자는 넣지 않는다.</p>
+<table><thead><tr><th></th><th>독도 편</th><th>울릉크루즈 본편</th></tr></thead><tbody>
+<tr><td>제목</td><td>서울→울릉도→독도까지 편도 13시간... 솔직히 너무 힘들었습니다</td><td>포항에서 울릉크루즈 9만원, 이게 크루즈라고? <span class="tag">잠금</span></td></tr>
+<tr><td>id</td><td><code>wdOtTElC5do</code></td><td class="empty">없음 (제작 중)</td></tr>
+<tr><td>조회</td><td class="num">1,757</td><td>아직 없음 (제작 중)</td></tr>
+<tr><td>출발</td><td>서울→울릉도→독도</td><td>포항에서</td></tr>
+<tr><td>가격</td><td class="empty">없음</td><td>9만원</td></tr>
+<tr><td>배 이름</td><td class="empty">없음</td><td>울릉크루즈</td></tr>
+<tr><td>반전</td><td>힘듬</td><td>이게 크루즈라고?</td></tr>
+</tbody></table>
+<p class="small muted">「울릉크루즈 본편 조회는 아직 없음(제작 중). 독도 편 1,757회는 이 제목의 실패 증거가 아님.」 — reference.md 「울릉 안 제목 대조」.</p>
+<h2 id="공식">공식 4칸 · 팀이 따를 규칙</h2>
+<p>reference.md 「우리 공식에 붙는 제목 방법만」·「팀이 따를 규칙」. content.md: 사용자분이 백업 1을 정함.</p>
+<div class="slots"><div class="slot"><span class="k">1 출발지</span>포항에서</div><div class="slot"><span class="k">2 가격 또는 기한</span>9만원</div><div class="slot"><span class="k">3 배 이름</span>울릉크루즈</div><div class="slot"><span class="k">4 반전 하나</span>이게 크루즈라고?</div></div>
+<h3>제목 방법 (히트에서만 읽음)</h3>
+<ol class="rules"><li>가격 또는 기한을 앞에 둔다. (6만원에, 3만원으로, 9월 2일 마지막)</li><li>배 이름을 고유명사로 넣는다. (부관훼리, 퀸제누비아2, 코스타 세레나)</li><li>반전은 혜택 하나다. 힘듬·불평은 넣지 않는다.</li><li>의문형은 탈만할까/왜 팔릴까처럼 결정용일 때만.</li></ol>
+<h3>팀이 따를 규칙 5줄</h3>
+<ol class="rules"><li>출발지, 가격 또는 기한, 배 이름, 반전 하나. 네 칸이 아니면 올리지 않는다.</li><li>가격은 구체 숫자로 앞에 둔다.</li><li>반전은 혜택이거나 탈만할까다. 힘듬 한탄은 쓰지 않는다.</li><li>독도 힘듬·줍줍·일반 팁·후기 재탕 제목은 쓰지 않는다. 울릉크루즈는 배 이름을 넣어 따로 쓴다.</li><li>월요일은 탈만할까/결정만. 크루즈시티 조회는 근거로 쓰지 않는다.</li></ol>
+<h2 id="추천">추천 제목 3</h2>
+<p>content.md 「제목」·「전략 제목 3」. 잠금 1 + 예비 2.</p>
 <div class="callout yellow"><div class="label">1 · 잠금</div><p><strong>포항에서 울릉크루즈 9만원, 이게 크루즈라고?</strong></p></div>
-<h2 id="ref">울릉 레퍼런스 4카드</h2>
-<p>CEO 잠금 2026-08-21: 또떠남·배타고 1위·밖구석TV·JY REPORT.</p>
+<div class="slots"><div class="slot"><span class="k">출발</span>포항에서</div><div class="slot"><span class="k">가격</span>9만원</div><div class="slot"><span class="k">배</span>울릉크루즈</div><div class="slot"><span class="k">반전</span>이게 크루즈라고?</div></div>
+<p><strong>왜 이 안인지</strong> — content.md 그대로:</p>
+<div class="quote">잠긴 반전은 크루즈냐고 되묻는 쪽입니다. 신규는 포항+9만으로 들어오고, 구독자는 코스타를 본 뒤에 이게 크루즈냐고 다시 보면 됩니다.<br>독도 편은 붙이지 않습니다.<br>가격은 약 9만, 촬영일 화면 기준입니다.</div>
+<p>자막 사실 (content.md): 포항 밤 11시 출발, 편도 약 9만, 6인실, 차 싣는 유일한 울릉 배. 크루즈인지 애매한 게 반전. 제목의 9만은 자막 기준 약가. 없는 숫자 만들지 않음.</p>
+<table><thead><tr><th></th><th>잠금 제목</th><th>퀸제누비아 (예스준)</th><th>박엥겍</th></tr></thead><tbody>
+<tr><td>제목</td><td>포항에서 울릉크루즈 9만원, 이게 크루즈라고?</td><td>비행기보다 싼데 거의 크루즈입니다. 3만원으로 제주도 (내 차 싣고 가는 퀸제누비아2)</td><td>먹여주고 재워주는 팬스타 미라클 크루즈</td></tr>
+<tr><td>조회</td><td>본편 아직 없음 (제작 중)</td><td><span class="tag">화면</span> 57만</td><td>656,414 · 2025-04-26 · <code>AR2ryUb9M9U</code></td></tr>
+<tr><td>같은 점</td><td colspan="3">가격 또는 배 이름이 제목에 있다. 퀸제누비아는 3만원+퀸제누비아2+내 차 싣고. 잠금은 9만원+울릉크루즈.</td></tr>
+<tr><td>다른 점</td><td colspan="3">퀸제누비아 제목은 「거의 크루즈입니다」. 잠금은 「이게 크루즈라고?」(content.md: 크루즈냐고 되묻는 쪽). 박엥겍 훅은 「먹여주고 재워주는」이라 잠금 반전과 다름.</td></tr>
+</tbody></table>
+<div class="rec"><div class="rec-kicker">2 · 예비</div><h2>포항에서 울릉크루즈 9만원, 차까지 실어 준다고?</h2></div>
+<div class="slots"><div class="slot"><span class="k">출발</span>포항에서</div><div class="slot"><span class="k">가격</span>9만원</div><div class="slot"><span class="k">배</span>울릉크루즈</div><div class="slot"><span class="k">반전</span>차까지 실어 준다고?</div></div>
+<p><strong>왜 이 안인지</strong> — content.md: 자막에 「차 싣는 유일한 울릉 배」. 예비 제목의 반전은 그 칸. 잠금은 크루즈냐고 되묻는 쪽을 골랐다.</p>
+<div class="callout"><div class="label">reference.md 「울릉 안 제목 대조」 — 적힌 문자열 그대로</div>
+<p>대조한 초안은 「포항에서 울릉 9만원, 차까지 실어 준다고?」(배 이름 없는 표기).</p>
+<p>같음: 출발지+가격+혜택 의문. 퀸제누비아(3만원, 차 싣고, 57만)와 같은 칸.</p>
+<p>다름: 배 이름이 없음. 9만원은 퀸제누비아 3만보다 약함.</p>
+<p>아래 예비 2는 content.md 목록대로 <strong>울릉크루즈</strong>가 들어가 있다. 「배 이름이 없음」은 위 초안 문자열에 대한 문장이다.</p></div>
+<div class="rec"><div class="rec-kicker">3 · 예비</div><h2>포항에서 울릉크루즈 9만원, 먹여주고 재워준다</h2></div>
+<div class="slots"><div class="slot"><span class="k">출발</span>포항에서</div><div class="slot"><span class="k">가격</span>9만원</div><div class="slot"><span class="k">배</span>울릉크루즈</div><div class="slot"><span class="k">반전</span>먹여주고 재워준다</div></div>
+<p><strong>왜 이 안인지</strong> — content.md: 「먹여주고 재워주는 훅은 제주·울릉에만.」 reference.md: 「박엥겍: 먹여주고 재워주는 훅만 울릉·제주.」 썸네일 시안 10번에만 이 훅을 씀 (content.md). 월요일(코스타 결정 편)에는 안 씀.</p>
+<table><thead><tr><th></th><th>예비 3</th><th>박엥겍</th><th>퀸제누비아</th></tr></thead><tbody>
+<tr><td>제목</td><td>포항에서 울릉크루즈 9만원, 먹여주고 재워준다</td><td>먹여주고 재워주는 팬스타 미라클 크루즈</td><td>비행기보다 싼데 거의 크루즈입니다. 3만원으로 제주도 (내 차 싣고 가는 퀸제누비아2)</td></tr>
+<tr><td>조회</td><td>본편 아직 없음</td><td>656,414</td><td><span class="tag">화면</span> 57만</td></tr>
+<tr><td>같은 점</td><td colspan="3">박엥겍과 같은 훅 문구 「먹여주고 재워주는」. reference.md가 이 훅을 울릉·제주에만 붙이라고 적음.</td></tr>
+<tr><td>다른 점</td><td colspan="3">박엥�만 붙이라고 적음.</td></tr>
+<tr><td>다른 점</td><td colspan="3">박엥겍 제목에는 가격·출발지가 없다. 배 이름은 팬스타 미라클. 퀸제누비아 반전은 차 싣고이지 먹여주고가 아님.</td></tr>
+</tbody></table>
+<h2 id="썸네일">썸네일 글자 스펙</h2>
+<div class="callout"><div class="label">잠금 글자 3</div>
+<p><span class="tag">포항에서</span> &nbsp; <span class="tag">9만</span> &nbsp; <span class="tag">이게 크루즈?</span></p>
+<p>화면: 포항 밤 선체. 크루즈처럼 안 보이는 각도(램프·선체).</p>
+<p>금지: 독도 바위 · 실루엣 · 낮 동해 독도 앵글. 끝화면 배지 썸네일 금지. 운항중단·바가지 금지.</p></div>
+<p>content.md 「썸네일」·「썸네일 시안 전략 10」. 가격은 약 9만, 촬영일 화면. 16:9. 먹여주고 재워주는는 시안 10번만.</p>
+<table><thead><tr><th>칸</th><th>씀</th><th>안 씀</th></tr></thead><tbody>
+<tr><td>글자</td><td>포항에서 / 9만 / 이게 크루즈?</td><td>독도, 운항중단, 바가지, 끝화면 배지</td></tr>
+<tr><td>화면</td><td>포항 밤 선체, 램프·선체</td><td>독도 바위, 독도 실루엣, 낮 동해 독도 앵글</td></tr>
+<tr><td>숫자</td><td>약 9만 (자막 약가, 촬영일 화면)</td><td>없는 객실가·없는 항차</td></tr>
+</tbody></table>
+<h2 id="레퍼런스">울릉 레퍼런스 4카드</h2>
+<p>CEO 잠금 2026-08-21: 브리핑은 또떠남·배타고 1위·밖구석TV·JY REPORT 네 편만. 배타고 1위는 배편 참고, 제목은 잠금. 추가 수집 없음. 독도·크루즈시티 제외. (reference.md · videos.md)</p>
+<div class="cards">
+<article class="card"><img class="thumb" src="https://i.ytimg.com/vi/1T4wFn1AD80/hqdefault.jpg" alt="또떠남 1T4wFn1AD80 썸네일"><div class="body">
+<h3>또떠남 @ddoddunam</h3>
+<p>멀미&amp;결항이 없다고?! 울릉크루즈 80만원대 스위트룸부터 6인실까지 완전 리뷰!</p>
+<p class="meta">조회 1,285,596 · 좋아요 7,477 · 댓글 465 · 좋아요% 0.58%<br>innertube 2026-08-21 07:21 KST<br>게시 2022-04-16 · <code>1T4wFn1AD80</code></p>
+<p class="caption">썸네일 글자: 「요즘 누가 울릉도를 멀미하면서 가나요?」 · 「스위트룸~」. 선체 SHIDAO INTL FERRY.</p>
+<p class="caption">댓글 요약 (reference.md): 멀미·결항 덜함, 다인실 혼숙이면 패스.</p></div></article>
+<article class="card"><img class="thumb" src="https://i.ytimg.com/vi/BSzcCiP8mk0/hqdefault.jpg" alt="배타고 BetaGo BSzcCiP8mk0 썸네일"><div class="body">
+<h3>배타고 BetaGo · #1</h3>
+<p>바가지 논란 속, 울릉도로 가는 마지막 바닷길[포항에서 배타고 울릉도에서 배타고 울진 후포로가자]</p>
+<p class="meta">조회 50,794 · 좋아요 726 · 댓글 195 · 좋아요% 1.43%<br>YouTube watch·innertube 2026-08-21<br>게시 2025-09-02 · <code>BSzcCiP8mk0</code></p>
+<p class="caption">썸네일 글자: 「울릉도 운항 중단!?」. 선체 ULLEUNG SUNFLOWER CRUISE.</p>
+<p class="caption">댓글 요약: 섬 바가지. 배편 참고만. 제목은 잠금이라 따르지 않음.</p>
+<div class="callout yellow" style="margin:10px 0 0;padding:10px 12px"><div class="label">제목 비권장</div><p>배편 참고만. 운항중단·바가지 제목은 따르지 않음.</p></div></div></article>
+<article class="card"><img class="thumb" src="https://i.ytimg.com/vi/bqfpNdlIwn8/hqdefault.jpg" alt="밖구석TV bqfpNdlIwn8 썸네일"><div class="body">
+<h3>밖구석TV @outside_corner_tv</h3>
+<p>울릉크루즈의 모든 것 | 포항에서 울릉도가는 크루즈 배가 있다고?! | 객실 | 편의시설 | 꿀팁 | 석양 | 일몰</p>
+<p class="meta">조회 36,559 · 좋아요 249 · 댓글 32 · 좋아요% 0.68%<br>innertube 2026-08-21 07:21 KST<br>게시 2023-02-11 · <code>bqfpNdlIwn8</code></p>
+<p class="caption">썸네일 글자: 「울릉크루즈」 + A to Z · 「꿀팁대공개!」. 선수 NEW SHIDAO PEARL, 선체 울릉크루즈(주).</p>
+<p class="caption">댓글 요약 (reference.md): 운항시간·가격·페리다. 좋아요%는 크루즈시티 0.023%와 다름. 채택.</p></div></article>
+<article class="card"><img class="thumb" src="https://i.ytimg.com/vi/vYOi32075Vo/hqdefault.jpg" alt="JY REPORT vYOi32075Vo 썸네일"><div class="body">
+<h3>JY REPORT</h3>
+<p class="muted">제목 문자열은 이번 재수집 표에 없음. reference.md: 「이번 재수집 표에는 빠져 있어 기존 소스 유지」.</p>
+<p class="meta">조회 10,204 · 좋아요 108 · 댓글 17<br>RYD+Invidious 2026-08-21<br>게시 <span class="empty">—</span> · <code>vYOi32075Vo</code></p>
+<p class="caption">댓글 요약 (reference.md): 결항·선착장·차량 운임.</p></div></article>
+</div>
+<p class="small muted">또떠남 조회는 videos.md 갱신: 1,285,589→1,285,596 (좋아요 7,477·댓글 465 유지). 카드는 갱신 숫자를 씀. JY REPORT 게시일·제목은 세 파일에 없어 비움.</p>
+<h2 id="제외">제외 목록</h2>
+<p>videos.md 「탈락」·머리말 제외. 히트로 쓰지 않음. 아카이브(배타고 2·3, 임도전, 릴라, 검색 추가 5)는 보고·시안에 올리지 않음.</p>
+<table><thead><tr><th>대상</th><th>id</th><th>적힌 이유</th><th>숫자 (있으면)</th></tr></thead><tbody>
+<tr><td>독도 편 (예스준)</td><td><code>wdOtTElC5do</code></td><td>독도 힘듬. 울릉크루즈 아님 (요청 제외)</td><td>1,757회</td></tr>
+<tr><td>크루즈시티</td><td><code>7grS-ID3-io</code></td><td>요청 제외. 조회 대비 좋아요 없음. 히트·아웃라이어에서 제외</td><td>371,441 / 87 / 6 · 0.023%</td></tr>
+<tr><td>손잡아 숲 TV</td><td><code>sw2yOJD_sJc</code></td><td>제목에 독도 입도순간. 탑승 후기 축 아님</td><td>4,069 / 55 / 47</td></tr>
+<tr><td>크달_크루즈</td><td><code>hxfnXGrmu6k</code></td><td>판매 채널. 고정에 가깝게 당첨자/예약 이벤트</td><td>56,823 / 2,054 / 댓글 공란</td></tr>
+<tr><td>유리소리TV</td><td><code>R9YWke09Wpo</code></td><td>울릉·독도 2박3일 코스. 독도 일정. 탑승 후기 아님</td><td class="empty">—</td></tr>
+<tr><td>강호의발바닥TV</td><td><code>RVOM3O1yTCk</code></td><td>100억 적자 해설. 탑승 후기 아님</td><td class="empty">—</td></tr>
+<tr><td>흰꼬리tv</td><td><code>C3PmO0kum7Q</code></td><td>패키지 후기. 탑승 후기 아님</td><td class="empty">—</td></tr>
+<tr><td>일상이여행</td><td><code>AXZDCRqFFDI</code></td><td>섬 현실·바가지. 배 탑승 후기 아님</td><td class="empty">—</td></tr>
+<tr><td>박엥겍</td><td><code>KDJMgCPiOSw</code></td><td>섬 물가 브이로그. 탑승 후기 아님</td><td class="empty">—</td></tr>
+<tr><td>EBS / 뉴스</td><td>EBSDocumentary · KBS · 포항MBC · YTN · 대구MBC · kt HCN</td><td>다큐 only · 뉴스 only</td><td class="empty">—</td></tr>
+<tr><td>가는법·예약 가이드</td><td>sHfCZOkI1hE · 9xIO5lI-kBs · zNOsr05UVvM 등</td><td>탑승 후기 아님. 댓글 패널 공란 또는 요금 제목</td><td class="empty">—</td></tr>
+</tbody></table>
+<div class="callout red"><div class="label">쓰지 않는 프레임</div><p>독도 · 크루즈시티(히트) · 판매 핀 · 힘듬. 배타고 「울릉도 운항 중단!?」 제목도 잠금이라 따르지 않음. 운항중단·바가지 금지.</p></div>
+<p class="small muted">videos.md 머리말 제외: 판매 고정댓글, 좋아요가 조회를 안 따라감, 탑승 후기가 아닌 섬 브이로그. 아카이브 숫자는 카드에 쓰지 않음 — 배타고 <code>w0t1PTTxe8U</code> 2,920 / 38 / 9, <code>XkX51swb6Kk</code> 3,068 / 25 / 7, 임도전 <code>XBv9zrLvGhU</code> 7,650 / 49 / 18, 릴라 <code>ssEpwxKO9Zw</code> 5,739 / 43 / 10.</p>
+<h2 id="브리핑">브리핑 3단</h2>
+<p>content.md 「탑승 후기 브리핑 (웹·메일용, 짧음)」. 줄이지 않고 옮김.</p>
+<h3>무엇을 찍었는지</h3>
+<div class="callout"><p>포항 밤 11시 출항, 6인실, 차를 싣는 램프, 선체. 독도 바위·독도 앵글은 없습니다. 편도 약 9만은 자막 기준이고, 숫자는 촬영일 화면입니다.</p></div>
+<h3>왜 배 실험인지</h3>
+<div class="callout"><p>독도 편은 후기·힘듬 서사라 CTR이 약했습니다. 이번엔 배 자체입니다. 울릉크루즈가 크루즈인지 애매한 지점이 반전입니다. 차 싣는 유일한 울릉 배라는 사실만 자막에 있습니다.</p></div>
+<h3>구독 / 신규</h3>
+<div class="callout"><p>신규는 포항에서 9만, 이게 크루즈냐고 들어옵니다. 구독자는 코스타·퀸제누비아 끝화면으로 배 실험만 다시 봅니다. 독도 편과 붙이지 않습니다.</p></div>
+<p>업로드: 월요일 코스타 다음. 끝화면 코스타 28만 + 퀸제누비아. (content.md)</p>
+<footer id="바닥">
+<p><strong>소스 경로</strong> · 조회일 2026-08-21 KST</p>
+<ul><li class="path">content.md</li><li class="path">reference.md</li><li class="path">ulleung-cruise/videos.md</li></ul>
+<p>썸네일 URL (i.ytimg.com hqdefault, 임베드 JPEG 없음)</p>
+<ul><li class="path">https://i.ytimg.com/vi/1T4wFn1AD80/hqdefault.jpg</li><li class="path">https://i.ytimg.com/vi/BSzcCiP8mk0/hqdefault.jpg</li><li class="path">https://i.ytimg.com/vi/bqfpNdlIwn8/hqdefault.jpg</li><li class="path">https://i.ytimg.com/vi/vYOi32075Vo/hqdefault.jpg</li></ul>
+<p>이 페이지의 숫자는 위 소스에만 있고 추정 조회는 없습니다. base64 이미지 없음.</p>
+</footer>
 </article>
 </body>
 </html>
