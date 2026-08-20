@@ -5,90 +5,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>울릉크루즈 제목 분석 보고서</title>
 <style>
-html,body{margin:0;padding:0;background:#fff;color:rgb(55,53,47)}
-body{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple SD Gothic Neo","Noto Sans KR";font-size:16px;line-height:1.6}
-*{box-sizing:border-box}
-.page{max-width:900px;margin:0 auto;padding:64px}
-h1{font-size:40px;font-weight:700;letter-spacing:-.02em;margin:0 0 8px;line-height:1.2}
-h2{font-size:24px;font-weight:600;margin:2em 0 .6em;padding-bottom:4px;border-bottom:1px solid rgba(55,53,47,.09);line-height:1.3}
-h3{font-size:18px;font-weight:600;margin:1.6em 0 .45em;line-height:1.35}
-p{margin:.7em 0}
-.muted{color:rgba(55,53,47,.65)}
-.small{font-size:14px}
-a{color:rgb(55,53,47);text-underline-offset:2px}
-hr{border:0;border-top:1px solid rgba(55,53,47,.09);margin:28px 0}
-.props{display:grid;grid-template-columns:88px 1fr;gap:6px 20px;margin:22px 0 28px;font-size:14px}
-.prop-k{color:rgba(55,53,47,.65)}
-.callout{background:rgb(241,241,239);border-radius:4px;padding:16px;margin:16px 0}
-.callout.yellow{background:rgb(251,243,219)}
-.callout.warn{background:rgb(253,236,238)}
-.callout.red{background:rgb(251,228,228)}
-.callout .label{font-size:14px;color:rgba(55,53,47,.65);margin-bottom:6px}
-.callout p:first-of-type{margin-top:0}
-.callout p:last-child{margin-bottom:0}
-code,.tag{background:rgba(135,131,120,.15);border-radius:4px;padding:2px 6px;font-size:14px;font-family:inherit}
-table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0 20px}
-th{background:rgb(247,246,243);text-align:left;font-weight:600}
-th,td{padding:10px 12px;border:1px solid rgba(55,53,47,.09);vertical-align:top}
-td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
-td.center,th.center{text-align:center}
-.empty{color:rgba(55,53,47,.35)}
-.quote{border-left:3px solid rgba(55,53,47,.2);padding:2px 0 2px 14px;margin:10px 0 14px}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0 8px}
-.card{background:#fff;border:1px solid rgba(55,53,47,.09);border-radius:8px;overflow:hidden}
-.card img.thumb{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:rgb(247,246,243)}
-.card .body{padding:12px 14px 16px}
-.card h3{margin-top:0;font-size:16px}
-.card .meta,.card .caption{font-size:14px;color:rgba(55,53,47,.65);margin:6px 0}
-.slots{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;margin:12px 0 16px}
-.slot{background:rgb(241,241,239);border-radius:4px;padding:10px 12px;font-size:14px}
-.slot .k{color:rgba(55,53,47,.65);font-size:13px;display:block;margin-bottom:2px}
-.rec{margin:2.2em 0 1.4em}
-.rec-kicker{font-size:14px;color:rgba(55,53,47,.65);margin-bottom:4px}
-.rec h2{border-bottom:none;padding-bottom:0;margin-top:0;font-size:26px;line-height:1.35}
-ol.rules{padding-left:22px}
-ol.rules li{margin:8px 0}
-footer{margin-top:56px;padding-top:20px;border-top:1px solid rgba(55,53,47,.09);font-size:14px;color:rgba(55,53,47,.65)}
-footer .path{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;word-break:break-all}
-@media (max-width:720px){
-  .page{padding:32px 20px}
-  .cards,.slots{grid-template-columns:1fr}
-  h1{font-size:28px}
-}
+body{margin:0;background:#fff;color:#37352f;font:16px/1.6 ui-sans-serif,-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+.page{max-width:900px;margin:0 auto;padding:48px 24px 80px}
+h1{font-size:32px;letter-spacing:-.02em;margin:0 0 8px;line-height:1.25}
+h2{font-size:22px;margin:2em 0 10px}
+.muted{color:rgba(55,53,47,.65);font-size:14px}
+.y{background:#fbf3db;border-radius:6px;padding:14px 16px;margin:16px 0}
+.w{background:#fdecee;border-radius:6px;padding:14px 16px;margin:16px 0}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{border:1px solid rgba(55,53,47,.09);border-radius:8px;overflow:hidden}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#f7f6f3}
+.card .b{padding:12px 14px 16px}
+.tag{background:rgba(135,131,120,.15);border-radius:4px;padding:2px 6px;font-size:13px}
+.slots{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;margin:12px 0}
+.slot{background:#f1f1ef;border-radius:4px;padding:10px 12px;font-size:14px}
+.slot b{display:block;color:rgba(55,53,47,.65);font-weight:500;font-size:12px}
+@media(max-width:720px){.g,.slots{grid-template-columns:1fr}h1{font-size:26px}}
 </style>
 </head>
 <body>
 <article class="page">
 <h1>울릉크루즈 제목 분석 보고서</h1>
-<p class="muted small">예스준 · 제목 잠금 · 공개 숫자만 · 추정 조회 없음</p>
-
-<div class="props">
-  <div class="prop-k">상태</div><div>제목 잠금</div>
-  <div class="prop-k">날짜</div><div>2026-08-21 KST</div>
-  <div class="prop-k">채널</div><div>예스준</div>
-  <div class="prop-k">작성</div><div>예스준 HQ</div>
-  <div class="prop-k">범위</div><div>한국 출발 크루즈·페리 공개 숫자만</div>
-  <div class="prop-k">Sources</div><div>content.md · reference.md · ulleung-cruise/videos.md</div>
+<p class="muted">예스준 · 2026-08-21 KST · 공개 숫자만 · 추정 조회 없음</p>
+<div class="y"><strong>한 줄 결론.</strong> 잠금 제목은 「포항에서 울릉크루즈 9만원, 이게 크루즈라고?」입니다. 출발지 + 가격 + 배 이름 + 반전 네 칸입니다.</div>
+<h2>추천 제목 3</h2>
+<div class="y"><span class="tag">1 · 잠금</span><p><strong>포항에서 울릉크루즈 9만원, 이게 크루즈라고?</strong></p></div>
+<p>2 · 예비: 포항에서 울릉크루즈 9만원, 차까지 실어 준다고?</p>
+<p>3 · 예비: 포항에서 울릉크루즈 9만원, 먹여주고 재워준다</p>
+<div class="slots">
+<div class="slot"><b>출발</b>포항에서</div>
+<div class="slot"><b>가격</b>9만원</div>
+<div class="slot"><b>배</b>울릉크루즈</div>
+<div class="slot"><b>반전</b>이게 크루즈라고?</div>
 </div>
-
-<h2 id="방법">방법 / 소스</h2>
-<p>이 페이지의 숫자·날짜·제목은 아래 소스에 적힌 것만 옮겼다. 없는 칸은 비운다. 추정 조회는 없다.</p>
-<table>
-  <thead><tr><th>소스</th><th>무엇을 밄</th><th>조회일</th><th>파일</th></tr></thead>
-  <tbody>
-    <tr><td>YouTube watch<br><span class="muted">ytInitialPlayerResponse</span> + 채널 RSS + yt-dlp</td><td>본 채널·경쟁 공개 조회. 이번 주 범위: 한국 출발 크루즈·페리만</td><td>2026-08-21</td><td>reference.md</td></tr>
-    <tr><td>YouTube innertube<br><span class="muted">POST /youtubei/v1/next · hl=ko · gl=KR</span></td><td>울릉 채택 표 조회·좋아요·댓글. 목록 근사치·창작 없음</td><td>2026-08-21 07:21–07:23 KST</td><td>videos.md</td></tr>
-    <tr><td>YouTube watch · innertube</td><td>배타고 BetaGo <code>BSzcCiP8mk0</code> 조회·좋아요·댓글</td><td>2026-08-21</td><td>reference.md · videos.md</td></tr>
-    <tr><td>RYD + Invidious</td><td>JY REPORT <code>vYOi32075Vo</code>. 이번 재수집 표에는 빠져 있어 기존 소스 유지</td><td>2026-08-21</td><td>reference.md</td></tr>
-    <tr><td>자막 (우리 편)</td><td>포항 밤 11시 출발, 편도 약 9만, 6인실, 차 싣는 유일한 울릉 배</td><td class="empty">—</td><td>content.md</td></tr>
-  </tbody>
-</table>
-<p class="small muted">레퍼런스 4편 자막 칸은 소스에 없음. 댓글 원문은 세 파일에 없어 요약만 옮김. 썸네일는 i.ytimg.com hqdefault (base64 없음).</p>
-
-<div class="callout warn">
-  <div class="label">크루즈시티 제외 — reference.md · videos.md에 적힌 숫자만</div>
-  <p>코스타 9/2 영상 <code>7grS-ID3-io</code>: <strong>371,441회 / 좋아요 87 / 댓글 6</strong> (yt-dlp 2026-08-21). 좋아요% 0.023%.</p>
-  <p>「크루즈시티는 레퍼런스에서 제외.」 「크루즈시티 수치는 히트로 쓰지 않음.」 「크루즈시티는 아웃라이어에서 제외.」 이 페이지에서 히트·근거로 쓰지 않는다.</p>
+<p class="muted">가격은 자막 약 9만, 촬영일 화면. 독도 편은 붙이지 않음. 먹여주고 훅은 울릉·제주만, 썸네일 시안 10번에만.</p>
+<h2>이긴 제목 (공개)</h2>
+<p>부관훼리 6만원 782,473회 <code>467_VGMtyU4</code> · 코스타 세레나 287,648회/7일 <code>xbw4osuVGvU</code> · 삼겹살 15만 290,419회 <code>ZqI_nVDYhvk</code></p>
+<p class="muted">화면만 있는 칸: 퀸제누비아 3만 57만 · 대마도 60만 · 4박5일 70만 54만. 공개 조회 없음.</p>
+<div class="w"><strong>독도 편은 대조만.</strong> 1,757회 <code>wdOtTElC5do</code>. 가격·배 이름 없음, 반전이 힘듬. 울릉크루즈 본편 조회는 아직 없음. 크루즈시티 371,441/87/6 (0.023%)는 히트 아님.</div>
+<h2>울릉 레퍼런스 4</h2>
+<div class="g">
+<article class="card"><img src="https://i.ytimg.com/vi/1T4wFn1AD80/hqdefault.jpg" alt="또떠남"><div class="b"><strong>또떠남</strong><p class="muted">1,285,596 · 좋아요 7,477 · 댓글 465 · 2022-04-16 · <code>1T4wFn1AD80</code></p><p>썸네일: 요즘 누가 울릉도를 멀미하면서 가나요?</p></div></article>
+<article class="card"><img src="https://i.ytimg.com/vi/BSzcCiP8mk0/hqdefault.jpg" alt="배타고"><div class="b"><strong>배타고 BetaGo</strong><p class="muted">50,794 · 좋아요 726 · 댓글 195 · 2025-09-02 · <code>BSzcCiP8mk0</code></p><p>배편 참고만. 운항중단·바가지 제목은 따르지 않음.</p></div></article>
+<article class="card"><img src="https://i.ytimg.com/vi/bqfpNdlIwn8/hqdefault.jpg" alt="밖구석TV"><div class="b"><strong>밖구석TV</strong><p class="muted">36,559 · 좋아요 249 · 댓글 32 · 2023-02-11 · <code>bqfpNdlIwn8</code></p><p>썸네일: 울릉크루즈 A to Z · 꿀팁대공개. 좋아요% 채택.</p></div></article>
+<article class="card"><img src="https://i.ytimg.com/vi/vYOi32075Vo/hqdefault.jpg" alt="JY REPORT"><div class="b"><strong>JY REPORT</strong><p class="muted">10,204 · 좋아요 108 · 댓글 17 · <code>vYOi32075Vo</code></p><p>제목·게시일은 소스에 없어 비움. 댓글 요약: 결항·선착장·차량 운임.</p></div></article>
 </div>
-
-<p>본 채널 공개 숫자 (reference.md, 조회일 2026-08-21): 구독 8.9만 / 583편 / 86,201,154회. 이김: 코스타 세레나 287,648회/7일 (<code>xbw4osuVGvU</code>). 부관훼리 782,473회 (<code>467_VGMtyU4</code>, 2026-05-02). 짐: 독도 편 1,757회 (<code>wdOtTElC5do</code>). 울릉크루즈와 다른 영상.</p>
+<h2>브리핑</h2>
+<p>포항 밤 11시 출항, 6인실, 차 램프, 선체. 독도 바위 없음. 편도 약 9만은 자막, 숫자는 촬영일 화면.</p>
+<p>독도 편은 힘듬 서사라 CTR이 약했음. 이번엔 배 실험. 신규는 포항에서 9만, 이게 크루즈냐고 들어옴. 끝화면은 코스타 28만 + 퀸제누비아.</p>
+<div class="w">쓰지 않음: 독도 · 크루즈시티 히트 · 운항중단 · 바가지 · 세일 배너 · A to Z.</div>
+<p class="muted">소스 2026-08-21 KST · content.md · reference.md · videos.md · 썸네일은 i.ytimg.com hqdefault</p>
+</article>
+</body>
+</html>
